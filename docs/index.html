@@ -7,8 +7,18 @@
     <title></title>
     <style media="screen">
       body{
-        background-color: #eee;
+        background-color: #ffa000;
         max-width: 100%;
+      }
+
+      .explain{
+        width: 80%;
+        margin: 1rem auto 2rem auto;
+      }
+
+      p{
+        font-size: 1.5rem;
+        color: #96291c
       }
 
       table{
@@ -17,10 +27,14 @@
 
       .table-bottom-1{
         background-color: #ff1;
+        width: 60%;
+        margin: 0 auto;
       }
 
       .table-bottom-2{
         background-color: #ff0;
+        width: 80%;
+        margin: 0 auto;
       }
 
       table ul li{
@@ -48,34 +62,94 @@
       ul li{
         list-style-type: none;
       }
+
+      h2{
+        text-align: center;
+      }
+
+
     </style>
   </head>
 
   <body>
+    <div class="explain">
+      <h2>
+        Web Hosting
+      </h2>
+      <hr>
+      <p> <h3> Why Business Hosting?:</h3> Specially configured for businesses. Every big web hosting company has business hosting plan.
+          Business hosting is also shared hosting, but comes with special features like separate storage,bandwidth, Customisable
+          web security and content caching softwares. </p>
+
+      <p>
+        <h3>How much storage you need ? :</h3> Well, it depends on the type of activities done on your website. File storage, database storage, Daily Backups,
+        email storage are the main resources to store. Definitly, you don't need unlimited storage. In reality, there is none.
+
+        Most commonly we call it "more than enough",
+        File storage: 1GB/website
+        Email storage: 5GB/Mailbox
+      </p>
+
+      <p>
+        <h3>What is caching softare? :</h3> In simple words,"These softwares help sites loads faster". It can be done many way, one of them is
+        DIT- Parallel Plesk Panel > Ngnix > Cloudflare > your computer browser
+      </p>
+
+      <p>
+        <h3> Why Muli-cores processor?:</h3> One fast single core or multi-core CPU does basically same thing.
+        When you need multi-core CPU?
+        You may not need a service from multi-core CPU, if your application does not require it. But you might,
+        For example:
+        You have two websites. Both has separate databases. Now you want to make a third website taking data from the exixting databases
+        for better indexing and traffic.Multi-core processors allow multiple databases to be consolidated onto a single server by increasing memory bandwidth.
+      </p>
+
+      <p>
+        <h3>Does Server location matters?:</h3> Sure.
+        Say you are targeting Canadian customers and you have a United Kingdom server and IP address.
+        The data has to travel across the Atlantic Ocean, so latency and download speed will be a bit slower
+        than if you were around the same area as your intended market.
+        Every second Counts. Site speed is literally money when it comes to your e-commerce.
+      </p>
+
+      <p>
+        <h3>Uptime:</h3> Amount of time your website is available and functional. Largely depends on hardware. High quality plan ensures a good performence and uptime.
+        Keeping uptime on Up is costly.
+      </p>
+
+      <p>
+        <h3>Which base Stack to choose?:</h3> All-in-one is not always good. You might get a beautifully painted house, with week pillars.
+        In web hosting, pillars are security firewalls, backups and email management.
+        Not so called congested unlimited storage, bandwidth or emails.
+      </p>
+      <p>
+        There is an simple overview of Business hosting plan offerd by DIT and some other hosting companies-
+      </p>
+    </div>
     <table>
       <tr>
         <th>Hosting Provider</th>
+        <th>DIT Web Solutions Inc.</th>
         <th>Godaddy</th>
         <th>HostGator</th>
         <th>SiteGround</th>
         <th>HostPapa</th>
-        <th>DIT Web Solutions Inc.</th>
       </tr>
       <tr class="even">
         <th>Price</th>
+        <td>$30/Month</td>
         <td>C$37.99/Month [free SSL inclueded]</td>
         <td>C$17/Month ~ $12.99 USD</td>
         <td>C$34.95/Month</td>
         <td>$21.99/Month</td>
-        <td>$30/Month</td>
       </tr>
       <tr class="odd">
         <th>SSL</th>
-        <td>Standard SSL C$99.99  Warranty 1.00M</td>
-        <td>C$52 ~ $39.99 USD [Warrenty: $10,000 USD]</td>
-        <td>SSL self-managed. Allow all third-party SSL.</td>
-        <td>$29.99 [No Warrenty]</td>
         <td>$25/Month [$50,000 warrenty, 1.25M Wildcard SSL]</td>
+        <td>Standard SSL C$99.99/year  Warranty 1.00M + Instalation Fee</td>
+        <td>C$52/year ~ $39.99 USD [Warrenty: $10,000 USD]+  Instalation Fee</td>
+        <td>SSL self-managed. Allow all third-party SSL.</td>
+        <td>C$39.99/year [No Warrenty]+  Instalation Fee </td>
       </tr>
       <tr class="even">
         <th>Web Security</th>
@@ -86,28 +160,28 @@
         <td>Three tier of Web Security</td>
       </tr>
       <tr class="odd">
-        <th>Storage</th>
+        <th>Web Space</th>
+        <td>60GB</td>
         <td>60GB</td>
         <td>Unmetered</td>
         <td>30GB</td>
         <td>Unlimited</td>
-        <td>60GB </td>
       </tr>
       <tr class="even">
         <th>Bandwidth</th>
+        <td>Highly Customisable, default 10GB</td>
         <td>Unmetered</td>
         <td>Unmetered</td>
         <td>Unmetered</td>
         <td>Unlimited</td>
-        <td>Highly Customisable, default 10GB</td>
       </tr>
       <tr class="odd">
         <th>Email Accounts </th>
+        <td>Highly Customisable, Default 10 mailboxes</td>
         <td>Unmetered</td>
         <td>Unmetered</td>
         <td>Unmetered</td>
         <td>Unlimited</td>
-        <td>Highly Customisable, Default 10 mailboxes</td>
       </tr>
       <tr class="even">
         <th>Back ups</th>
@@ -119,34 +193,34 @@
       </tr>
       <tr class="odd">
         <th>Base Stack</th>
+        <td>Linux, Apache, Ngnix based plesk Panel</td>
         <td>Linux and Apache based  cPanel/plesk</td>
         <td>Linux and Apache based  cPanel/plesk</td>
         <td>Linux, Apache and Ngnix based  cPanel</td>
         <td>Linux, Apache based cPanel</td>
-        <td>Linux, Apache, Ngnix based plesk Panel</td>
       </tr>
       <tr class="even">
         <th>CPU</th>
+        <td>4 Cores (25% CPU usage for 90 seconds)</td>
         <td>1 Core (25% CPU usage for 90 seconds)</td>
         <td>1 Core (25% CPU usage for 90 seconds)</td>
         <td>2 Cores (25% CPU usage for 90 seconds)</td>
         <td>4 Cores (25% CPU usage for 90 seconds)</td>
-        <td>4 Cores (25% CPU usage for 90 seconds)</td>
       </tr>
       <tr class="odd">
         <th>Location</th>
+        <td>Markham, Ontario</td>
         <td>Phoenix Arizona.</td>
         <td>Houston, Texas.</td>
         <td>Chicago, USA.</td>
         <td>Burlington, Ontario</td>
-        <td>Markham, Ontario</td>
       </tr>
       <tr class="even">
         <th>Uptime</th>
         <td>99.99%</td>
-        <td>99%</td>
-        <td>99%</td>
         <td>99.99%</td>
+        <td>99%</td>
+        <td>99%</td>
         <td>99.99%</td>
       </tr>
     </table>
@@ -154,7 +228,21 @@
 
     <table class="table-bottom-1">
       <tr>
-        <h3>Web Security</h3>
+        <h2>Web Security</h2>
+      </tr>
+      <tr><td>DIT Web Solutions Inc.</td>
+        <td>
+          <ul>
+            <li>   - Backup before upgrade </li>
+            <li>   - Routine updates to wordpress minor releases </li>
+            <li>   - Plugin updates </li>
+            <li>   - Security & exploit scans & fixes </li>
+            <li>   - Security Installation of WP Fence </li>
+            <li>   - Any compromised files</li>
+            <li>   - Web Application Firewall </li>
+            <li>   - Yearly/Quarterly/Monthly audit </li>
+          </ul>
+        </td>
       </tr>
         <tr><td>Godaddy</td>
           <td>
@@ -201,32 +289,27 @@
             </ul>
           </td>
         </tr>
-        <tr><td>DIT Web Solutions Inc.</td>
-          <td>
-            <ul>
-              <li>   - Backup before upgrade </li>
-              <li>   - Routine updates to wordpress minor releases </li>
-              <li>   - Plugin updates </li>
-              <li>   - Security & exploit scans & fixes </li>
-              <li>   - Security Installation of WP Fence </li>
-              <li>   - Any compromised files</li>
-              <li>   - Web Application Firewall </li>
-              <li>   - Yearly/Quarterly/Monthly audit </li>
-            </ul>
-          </td>
-        </tr>
     </table>
 
     <table class="table-bottom-2">
       <tr>
-        <h3>Base Stack</h3>
+        <h2>Base Stack</h2>
+      </tr>
+      <tr><td>DIT Web Solutions Inc.</td>
+        <td>
+          <ul>
+            <li>- php version (ranges from 5.2.7 - 7.2.11)</li>
+            <li>- mySql version (5.3 or higher)</li>
+            <li>- Contents Served from SSD , Cloudflare CDN and Ngnix caching</li>
+          </ul>
+        </td>
       </tr>
         <tr><td>Godaddy</td>
           <td>
             <ul>
               <li>-php version (ranges from 5.4 - 7.2)</li>
               <li>-mySql version (5.6.33)</li>
-              <li>-Ngnix - not available. Contents Served from SSD</li>
+              <li>-Ngnix - not available in the plan.</li>
             </ul>
           </td>
         </tr>
@@ -235,7 +318,7 @@
             <ul>
               <li>-php version (ranges from 5.5 - 7.0)</li>
               <li>-mySql version (5.5 or higher)</li>
-              <li>-Ngnix - not available. Contents Served from SSD</li>
+              <li>-Ngnix - not available in the plan.</li>
             </ul>
           </td>
         </tr>
@@ -253,19 +336,15 @@
             <ul>
               <li>-php version (ranges from 5.6.38 - 7.2)</li>
               <li>-mySql version (5.5 or higher)</li>
-              <li>-Contents Served from SSD or Cloudflare CDN. Ngnix caching not available</li>
+              <li>-Contents Served from SSD or Cloudflare CDN. Ngnix caching not available in the plan</li>
             </ul>
           </td>
         </tr>
-        <tr><td>DIT Web Solutions Inc.</td>
-          <td>
-            <ul>
-              <li>- php version (ranges from 5.2.7 - 7.2.11)</li>
-              <li>- mySql version (5.3 or higher)</li>
-              <li>- Contents Served from SSD , Cloudflare CDN and Ngnix caching</li>
-            </ul>
-          </td>
-        </tr>
+    </table>
+    <table>
+      <tr>
+        <h2>DIT Web Solutions Inc.</h2>
+      </tr>
     </table>
   </body>
 </html>
